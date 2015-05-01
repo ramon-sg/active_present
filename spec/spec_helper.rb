@@ -7,6 +7,9 @@ require 'rspec'
 
 require 'rails/all'
 require 'rspec/rails'
+require 'generator_spec'
+
+require 'generators/active_present/install/install_generator'
 
 require File.expand_path('../dummy/config/environment', __FILE__)
 
@@ -23,7 +26,3 @@ RSpec.configure do |config|
   # config.infer_base_class_for_anonymous_controllers = false
   config.order = 'random'
 end
-
-
-
-
