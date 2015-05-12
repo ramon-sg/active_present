@@ -11,15 +11,6 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Presenters for rails.}
   spec.description   = %q{Presenters for rails.}
-  # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
@@ -33,6 +24,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'sqlite3'
   spec.add_development_dependency 'factory_girl_rails'
+  spec.add_development_dependency 'generator_spec'
+  spec.add_development_dependency 'database_cleaner'
 
   spec.add_runtime_dependency 'rails', '~> 4.0'
 
